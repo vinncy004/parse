@@ -1,0 +1,40 @@
+
+Here are some commonly used MySQL commands along with their descriptions:
+
+SHOW DATABASES;: Displays a list of all databases on the MySQL server.
+
+USE database_name;: Selects a specific database to work with.
+
+SHOW TABLES;: Lists all tables in the currently selected database.
+
+DESCRIBE table_name; or DESC table_name;: Shows the structure of a table, including column names, types, and any constraints.
+
+SELECT * FROM table_name;: Retrieves all rows and columns from a table.
+
+SELECT column1, column2 FROM table_name;: Retrieves specific columns from a table.
+
+INSERT INTO table_name (column1, column2, ...) VALUES (value1, value2, ...);: Inserts a new row into a table with specified values.
+
+UPDATE table_name SET column1 = value1, column2 = value2 WHERE condition;: Updates existing rows in a table that match the specified condition.
+
+DELETE FROM table_name WHERE condition;: Deletes rows from a table that match the specified condition.
+
+CREATE DATABASE database_name;: Creates a new database.
+
+CREATE TABLE table_name (column1 datatype, column2 datatype, ...);: Creates a new table with specified columns and data types.
+
+ALTER TABLE table_name ADD column_name datatype;: Adds a new column to an existing table.
+
+ALTER TABLE table_name DROP COLUMN column_name;: Removes a column from an existing table.
+
+ALTER TABLE table_name MODIFY COLUMN column_name new_datatype;: Modifies the data type of an existing column in a table.
+
+DROP TABLE table_name;: Deletes a table from the database.
+
+DROP DATABASE database_name;: Deletes a database and all its tables.
+
+GRANT privileges ON database_name.table_name TO 'username'@'hostname';: Grants specific privileges on a database or table to a user.
+
+REVOKE privileges ON database_name.table_name FROM 'username'@'hostname';: Revokes previously granted privileges from a user.
+
+These are some fundamental MySQL commands, and there are many more advanced commands and functionalities available depending on your requirements and the version of MySQL you're using.

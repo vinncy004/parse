@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+<style>
+    body{
+        background-color: #181830;
+        margin: 0;
+        justify-content: center;
+        display:flex;
+    }
+    form{
+        align-items: center;
+        background-color: rgb(136, 16, 72);
+        color: white;
+
+    }
+    input{
+        background-color: aqua;
+        color:rgb(8, 64, 216);
+    }    
+   
+    #login{
+        color: fff 0f;
+        font-size: larger;
+        font-family: impact;
+        font-variant: var(a);
+    }
+    #p2{
+        color:blue;
+        font-weight:bold;
+        text-decoration: dotted;
+    }
+    #button2{
+        color:black;
+        background-color: #050305;
+        onclick="alert('submit form')";
+    }
+    .container{
+        align-items: center;
+        height: 100vh;
+    }
+    button{
+        
+        border: 1px;
+        background-color: #d41616;
+        font-size: 1rem;
+        font-weight:bold ;
+        padding: 2px;
+        border-radius: 5px;
+    }
+</style>
+
+    </head>
+    <body>
+        <script>
+            function validate(){
+                var iName=document.getElementById('inputName').value
+            if(iName=="")
+            {
+                alert('enter username and password');
+            }
+            else{
+                alert('successful login')
+            }
+            var pass=document.getElementById('valid').value
+            if(pass.length<4){
+                alert('short password')
+            }
+            
+            }
+           
+        </script>
+        
+        
+       <center>
+        <br>
+        <form  action="instruct " value="mailto:vinnypeter01@gmail.com" method="get">
+            <fieldset>
+         <legend>LOGINS</legend>
+        <p>username</p>
+        <input name="username" id="inputName" type="email" maxlength="40" placeholder=" enter your email">
+            <p>password</p>
+        <input type="password" id="valid" name="password" placeholder="strong password" maxlength="8"autocomplete="off">
+        <br>
+        <a href="mailto:petervinny0@gmail.com"value="reset password">reset password</a>
+        <nav>
+            <a href="select.html" id="access" onclick="validate()" >SIGN IN</a>
+        </nav>
+        </fieldset>
+        </form>
+    
+</center>
+          
+    </body>
+</html>

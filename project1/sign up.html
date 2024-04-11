@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function validate(){
+            var iName=document.getElementById('pass1').value
+            var iName2=document.getElementById('pass2').value
+        if(iName!=iName2)
+        {
+            alert('passwords do not match');
+        }
+        else{
+            alert('successful login')
+        }
+        var pass=document.getElementById('valid').value
+        if(pass.length<4){
+            alert('short password')
+        }
+       
+        }
+       
+    </script>
+    
+    <style>
+          body{
+        background-color: aquamarine;
+        margin: 0;
+        justify-content: center;
+        display:flex;
+    }
+    form{
+        align-items: center;
+        background-color: greenyellow;
+        color: black;
+    }
+    #login{
+        color: fff 0f;
+        font-size: larger;
+        font-family: impact;
+        font-variant: var(a);
+    }
+    #p2{
+        color:blue;
+        font-weight:bold;
+        text-decoration: dotted;
+    }
+    #button2{
+        color:black;
+        background-color: rgb(212, 23, 212);
+        onclick="alert('submit form')";
+    }
+    .container{
+        align-items: center;
+        height: 100vh;
+    }
+    button{
+        
+        border: 1px;
+        background-color: #d41616;
+        font-size: 1rem;
+        font-weight:bold ;
+        padding: 2px;
+        border-radius: 5px;
+    }
+</style>
+    </style>
+</head>
+<body>
+   <center>
+    <fieldset>
+        <legend id="login">REGISTER</legend>
+        <form name="myform" method="post">
+            <p >username</p>
+            <input type="email" id="inputName"name="username" placeholder="email">
+            <br>
+            <p>password</p>
+            <input type="password" id="pass1" name="password" placeholder="strong password" minlength="4">
+            <p> cornfirm password</p>
+            <input type="password" id="pass2"name="password" placeholder="strong password" minlength="4">
+            <br>
+            <nav>
+                <a href="login.html" onclick="validate()">sign up </a>
+            </nav>
+           </form>
+    </fieldset>
+ 
+</body>
+</html>

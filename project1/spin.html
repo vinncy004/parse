@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>spin game</title>
+</head>
+<link rel="stylesheet" href="wheelstylesheet.css">
+<body>
+    <div class="container">
+    <div class="spinBtn">spin</div>
+    <div class="wheel">
+        <div class="number" style="--i:1;--clr:#db7093;"><span>100</span></div>
+            <div class="number" style="--i:2;--clr:#1e201e;"><span>10x</span></div>
+                <div class="number" style="--i:3;--clr:#70db9d;"><span>2.4x</span></div>
+
+                
+                    <div class="number" style="--i:4;--clr:#dee204;"><span>0x</span></div>
+
+                    
+                        <div class="number" style="--i:5;--clr:#2c0726;"><span>15x</span></div>
+
+                        
+                            <div class="number" style="--i:6;--clr:#72c761;"><span>1x</span></div>
+
+                            
+                                <div class="number" style="--i:7;--clr:#558297;"><span>25x JP</span></div>
+
+                                
+                                    <div class="number" style="--i:8;--clr:#881c40;"><span>3.4X</span></div>
+
+                                    
+                                        <div class="number" style="--i:9;--clr:#43d886;"><span>0X</span></div>
+    </div>
+    </div>
+      <script>
+        let wheel = document.querySelector('.wheel');
+        let spinBtn = document.querySelector('.spinBtn');
+        let value = Math.ceil(Math.random()* 3600);
+
+        spinBtn.onclick= function(){
+            wheel.style.transform ="rotate("+ value +"deg)";
+            value += Math.ceil(Math.random()* 3600);
+
+        
+        }
+
+      </script>
+    
+    
+</body>
+</html>
